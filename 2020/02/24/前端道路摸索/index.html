@@ -1,0 +1,573 @@
+<!DOCTYPE html><html lang="zh-CN"><head>
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2">
+<meta name="theme-color" content="#222">
+<meta name="generator" content="Hexo 4.2.1">
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-next.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32-next.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16-next.png">
+  <link rel="mask-icon" href="/images/logo.svg" color="#222">
+
+
+
+
+
+  
+  <script src="//cdnjs.cloudflare.com/ajax/libs/pace/1.0.2/pace.min.js"></script>
+
+
+<script id="hexo-configurations">
+  var NexT = window.NexT || {};
+  var CONFIG = {
+    hostname: new URL('http://jamesxu.wang').hostname,
+    root: '/',
+    scheme: 'Pisces',
+    version: '7.6.0',
+    exturl: false,
+    sidebar: {"position":"left","Muse | Mist":320,"display":"post","padding":18,"offset":12,"onmobile":false},
+    copycode: {"enable":true,"show_result":true,"style":null},
+    back2top: {"enable":true,"sidebar":false,"scrollpercent":false},
+    bookmark: {"enable":false,"color":"#222","save":"auto"},
+    fancybox: false,
+    mediumzoom: false,
+    lazyload: false,
+    pangu: false,
+    comments: {"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},
+    algolia: {
+      appID: '',
+      apiKey: '',
+      indexName: '',
+      hits: {"per_page":10},
+      labels: {"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}
+    },
+    localsearch: {"enable":true,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false},
+    path: 'search.xml',
+    motion: {"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}}
+  };
+</script>
+
+  <meta name="description" content="首先要明确一点，正确评估自己的能力水平和性格特点，走技术专家路线还是走管理路线。技术专家也是有好几个方向的，一般还是与实际业务结合 偏应用路线解决方案，使自己的技术形成一个闭环。通过不断的学习使得解决方案构建升级。 因为打算走技术专家路线，整理几个前端比较常规的岗位和进阶方向，技术专家我觉得正常是其中几个自由组合吧。。 ①Node服务端工程师:所需掌握技能：">
+<meta property="og:type" content="article">
+<meta property="og:title" content="前端工程师进阶道路方向摸索">
+<meta property="og:url" content="http://jamesxu.wang/2020/02/24/%E5%89%8D%E7%AB%AF%E9%81%93%E8%B7%AF%E6%91%B8%E7%B4%A2/index.html">
+<meta property="og:site_name" content="JamesxuWang">
+<meta property="og:description" content="首先要明确一点，正确评估自己的能力水平和性格特点，走技术专家路线还是走管理路线。技术专家也是有好几个方向的，一般还是与实际业务结合 偏应用路线解决方案，使自己的技术形成一个闭环。通过不断的学习使得解决方案构建升级。 因为打算走技术专家路线，整理几个前端比较常规的岗位和进阶方向，技术专家我觉得正常是其中几个自由组合吧。。 ①Node服务端工程师:所需掌握技能：">
+<meta property="og:locale" content="zh_CN">
+<meta property="article:published_time" content="2020-02-24T19:28:12.000Z">
+<meta property="article:modified_time" content="2021-05-29T21:58:20.605Z">
+<meta property="article:author" content="Jamesxu Wang">
+<meta property="article:tag" content="生活日志">
+<meta property="article:tag" content="前端">
+<meta name="twitter:card" content="summary">
+
+<link rel="canonical" href="http://jamesxu.wang/2020/02/24/%E5%89%8D%E7%AB%AF%E9%81%93%E8%B7%AF%E6%91%B8%E7%B4%A2/">
+
+
+<script id="page-configurations">
+  // https://hexo.io/docs/variables.html
+  CONFIG.page = {
+    sidebar: "",
+    isHome: false,
+    isPost: true
+  };
+</script>
+
+  <title>前端工程师进阶道路方向摸索 | JamesxuWang</title>
+  
+
+
+
+
+
+
+  <noscript>
+  <style>
+  .use-motion .brand,
+  .use-motion .menu-item,
+  .sidebar-inner,
+  .use-motion .post-block,
+  .use-motion .pagination,
+  .use-motion .comments,
+  .use-motion .post-header,
+  .use-motion .post-body,
+  .use-motion .collection-header { opacity: initial; }
+
+  .use-motion .site-title,
+  .use-motion .site-subtitle {
+    opacity: initial;
+    top: initial;
+  }
+
+  .use-motion .logo-line-before i { left: initial; }
+  .use-motion .logo-line-after i { right: initial; }
+  </style>
+</noscript>
+
+<script>function loadCss(l){var d=document,h=d.head,s=d.createElement('link');s.rel='stylesheet';s.href=l;!function e(f){if (d.body)return f();setTimeout(function(){e(f)})}(function(){h.appendChild(s);});}loadCss('/style.css');loadCss('//cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css');loadCss('//cdnjs.cloudflare.com/ajax/libs/pace/1.0.2/themes/blue/pace-theme-minimal.min.css');</script><noscript><link rel="stylesheet" href="/style.css"><link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"><link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/pace/1.0.2/themes/blue/pace-theme-minimal.min.css"></noscript></head>
+
+<body itemscope="" itemtype="http://schema.org/WebPage">
+  <div class="container use-motion">
+    <div class="headband"></div>
+
+    <header class="header" itemscope="" itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-brand-container">
+  <div class="site-meta">
+
+    <div>
+      <a href="/" class="brand" rel="start">
+        <span class="logo-line-before"><i></i></span>
+        <span class="site-title">JamesxuWang</span>
+        <span class="logo-line-after"><i></i></span>
+      </a>
+    </div>
+        <p class="site-subtitle">Poor Home/Blog</p>
+  </div>
+
+  <div class="site-nav-toggle">
+    <div class="toggle" aria-label="切换导航栏">
+      <span class="toggle-line toggle-line-first"></span>
+      <span class="toggle-line toggle-line-middle"></span>
+      <span class="toggle-line toggle-line-last"></span>
+    </div>
+  </div>
+</div>
+
+
+<nav class="site-nav">
+  
+  <ul id="menu" class="menu">
+        <li class="menu-item menu-item-home">
+
+    <a href="/" rel="section"><i class="fa fa-fw fa-home"></i>首页</a>
+
+  </li>
+        <li class="menu-item menu-item-about">
+
+    <a href="/about/" rel="section"><i class="fa fa-fw fa-user"></i>关于</a>
+
+  </li>
+        <li class="menu-item menu-item-tags">
+
+    <a href="/tags/" rel="section"><i class="fa fa-fw fa-tags"></i>标签<span class="badge">6</span></a>
+
+  </li>
+        <li class="menu-item menu-item-categories">
+
+    <a href="/categories/" rel="section"><i class="fa fa-fw fa-th"></i>分类<span class="badge">3</span></a>
+
+  </li>
+        <li class="menu-item menu-item-archives">
+
+    <a href="/archives/" rel="section"><i class="fa fa-fw fa-archive"></i>归档<span class="badge">17</span></a>
+
+  </li>
+      <li class="menu-item menu-item-search">
+        <a role="button" class="popup-trigger"><i class="fa fa-search fa-fw"></i>搜索
+        </a>
+      </li>
+  </ul>
+
+</nav>
+  <div class="site-search">
+    <div class="popup search-popup">
+    <div class="search-header">
+  <span class="search-icon">
+    <i class="fa fa-search"></i>
+  </span>
+  <div class="search-input-container">
+    <input autocomplete="off" autocorrect="off" autocapitalize="none" placeholder="搜索..." spellcheck="false" type="text" id="search-input">
+  </div>
+  <span class="popup-btn-close">
+    <i class="fa fa-times-circle"></i>
+  </span>
+</div>
+<div id="search-result"></div>
+
+</div>
+<div class="search-pop-overlay"></div>
+
+  </div>
+</div>
+    </header>
+
+    
+  <div class="back-to-top">
+    <i class="fa fa-arrow-up"></i>
+    <span>0%</span>
+  </div>
+  <div class="reading-progress-bar"></div>
+
+  <a href="https://github.com/JamesxuWang" class="github-corner" title="Follow me on GitHub" aria-label="Follow me on GitHub" rel="noopener" target="_blank"><svg width="80" height="80" viewBox="0 0 250 250" aria-hidden="true"><path d="M0,0 L115,115 L130,115 L142,142 L250,250 L250,0 Z"></path><path d="M128.3,109.0 C113.8,99.7 119.0,89.6 119.0,89.6 C122.0,82.7 120.5,78.6 120.5,78.6 C119.2,72.0 123.4,76.3 123.4,76.3 C127.3,80.9 125.5,87.3 125.5,87.3 C122.9,97.6 130.6,101.9 134.4,103.2" fill="currentColor" style="transform-origin: 130px 106px;" class="octo-arm"></path><path d="M115.0,115.0 C114.9,115.1 118.7,116.5 119.8,115.4 L133.7,101.6 C136.9,99.2 139.9,98.4 142.2,98.6 C133.8,88.0 127.5,74.4 143.8,58.0 C148.5,53.4 154.0,51.2 159.7,51.0 C160.3,49.4 163.2,43.6 171.4,40.1 C171.4,40.1 176.1,42.5 178.8,56.2 C183.1,58.6 187.2,61.8 190.9,65.4 C194.5,69.0 197.7,73.2 200.1,77.6 C213.8,80.2 216.3,84.9 216.3,84.9 C212.7,93.1 206.9,96.0 205.4,96.6 C205.1,102.4 203.0,107.8 198.3,112.5 C181.9,128.9 168.3,122.5 157.7,114.1 C157.9,116.9 156.7,120.9 152.7,124.9 L141.0,136.5 C139.8,137.7 141.6,141.9 141.8,141.8 Z" fill="currentColor" class="octo-body"></path></svg></a>
+
+
+    <main class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          
+
+          <div class="content">
+            
+
+  <div class="posts-expand">
+      
+  
+  
+  <article itemscope="" itemtype="http://schema.org/Article" class="post-block " lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="http://jamesxu.wang/2020/02/24/%E5%89%8D%E7%AB%AF%E9%81%93%E8%B7%AF%E6%91%B8%E7%B4%A2/">
+
+    <span hidden="" itemprop="author" itemscope="" itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.jpg">
+      <meta itemprop="name" content="Jamesxu Wang">
+      <meta itemprop="description" content="圣贤庸行，大人小心！">
+    </span>
+
+    <span hidden="" itemprop="publisher" itemscope="" itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="JamesxuWang">
+    </span>
+      <header class="post-header">
+        <h1 class="post-title" itemprop="name headline">
+          前端工程师进阶道路方向摸索
+        </h1>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              <span class="post-meta-item-text">发表于</span>
+
+              <time title="创建时间：2020-02-24 19:28:12" itemprop="dateCreated datePublished" datetime="2020-02-24T19:28:12+00:00">2020-02-24</time>
+            </span>
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              <span class="post-meta-item-text">分类于</span>
+                <span itemprop="about" itemscope="" itemtype="http://schema.org/Thing">
+                  <a href="/categories/%E7%94%9F%E6%B4%BB%E9%9A%8F%E7%AC%94/" itemprop="url" rel="index">
+                    <span itemprop="name">生活随笔</span>
+                  </a>
+                </span>
+            </span>
+
+          <br>
+            <span class="post-meta-item" title="本文字数">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-file-word-o"></i>
+              </span>
+                <span class="post-meta-item-text">本文字数：</span>
+              <span>1.5k</span>
+            </span>
+            <span class="post-meta-item" title="阅读时长">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-clock-o"></i>
+              </span>
+                <span class="post-meta-item-text">阅读时长 ≈</span>
+              <span>1 分钟</span>
+            </span>
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+        <p>首先要明确一点，正确评估自己的能力水平和性格特点，走技术专家路线还是走管理路线。技术专家也是有好几个方向的，一般还是与实际业务结合 偏应用路线解决方案，使自己的技术形成一个闭环。通过不断的学习使得解决方案构建升级。</p>
+<p>因为打算走技术专家路线，整理几个前端比较常规的岗位和进阶方向，技术专家我觉得正常是其中几个自由组合吧。。</p>
+<p>①Node服务端工程师:<br>所需掌握技能：</p>
+<ul>
+<li>能够基于 net 模块开发 Socket 应用并深度理解 HTTP 协议</li>
+<li>彻底理解 Node.js 中的事件循环特性</li>
+<li>能够使用 Cluster 开发多进程应用充分发挥多核 CPU</li>
+<li>能够操作常见的 NoSQL 数据库并能够通过 Node.js 操作</li>
+<li>能够掌握主流的 MVC Web 应用开发框架 Adonis、Egg</li>
+<li>能够深入理解基于 GraphQL 标准开发现代化的应用层接口</li>
+<li>能够使用 Node.js 开发基本的网络爬虫应用</li>
+</ul>
+<p>关键词<br>Socket、EventLoop、Cluster、Redis、MongoDB、Memcached、Adonis.js、Egg.js、GraphQL、微服务、Nightmare、Puppeteer </p>
+<p>②计算机图形学工程师：</p>
+<p>所需掌握技能：</p>
+<ul>
+<li>能够使用 HTML5 技术开发网页游戏</li>
+<li>能够使用 WebGL 技术完成炫酷 3D 类图形效果</li>
+<li>能够掌握常用的可视化库的应用</li>
+<li>能够使用 Three.js 开发简单的 3D 网页游戏</li>
+<li>能够使用 HTML5 游戏引擎开发网页游戏</li>
+</ul>
+<p>关键词<br>WebGL、Three.js、H5 游戏、游戏引擎、Cocos2d-x、Egret </p>
+<p>③安全前端工程师<br>所需掌握技能</p>
+<ul>
+<li>熟悉常用操作系统及各版本浏览器特性，能使用这些特性来编写payload。</li>
+<li>熟练使用html5、javascript、node.js等前端语言，并熟悉常用库。<br>深入理解xss、csrf等前端漏洞原理及特性。</li>
+<li>有web应用白盒审计能力，能从源码中挖掘前端漏洞。</li>
+<li>有大中型网站前端漏洞挖掘经验。</li>
+</ul>
+<p>④混合开发前端工程师<br>所需掌握技能：</p>
+<ul>
+<li>能够使用混合式 App 开发框架快速开发移动 App</li>
+<li>能够配合原生应用开发 App 内嵌 H5 页面并可以通过 JSBridge 调用原生接口</li>
+<li>能够使用 wepy / mpvue 框架开发小程序或快应用项目</li>
+<li>能够使用 taro 多端统一解决方案同时完成移动 App、移动 Web、小程序的开发- 能够独立使用 React Native 开发原生 App- 了解 Weex / Flutter 等其他原生应用的前端技术开发方式</li>
+<li>Flutter ? Flutter : React Native</li>
+</ul>
+<p>关键词<br>Cordova、Ionic、Webview + H5、JSBridge、mpvue、taro、Weex、Flutter</p>
+<p>⑤webgis工程师<br>所需掌握技能：</p>
+<ul>
+<li>能够使用Leaflet/openlayers/mapbox/arcgis for js中的其中几种开发框架快速开发</li>
+<li>能够配合调用arcgis server/geoserver原生接口</li>
+<li>能够使用 turf/gdal等GIS分析框架开发做空间分析</li>
+<li>能够深入理解基于postgis 空间数据数据库的分析应用</li>
+<li>Java(java-spring-boot)</li>
+<li>arc-python<br>关键词<br>openlayers、arcgis、geoserver、gdal、postgis </li>
+</ul>
+<p>⑥前端架构师</p>
+<ul>
+<li>构建前端开发自动化的工作流,包括脚手架,本地服务,规范检查,单元测试,部署发布等;</li>
+<li>负责平台级产品前端架构体系的规划,设计,建设,包括移动端和PC端,通过技术提升用户体验和可用性。</li>
+<li>负责基础库,框架和关键模块的开发和改进,负责微服务前端技术方案,架构设计及规范制定及核心功能研发。</li>
+<li>制定前端开发规范,参与制定技术标准,编写相应的技术文档,对通用技术进行整理;</li>
+<li>设计,开发可视化类库组件,对前端开发,数据可视化有自己的独立见解</li>
+</ul>
+<p>关键词<br>verdaccio、jest、webpack、linux、eslint</p>
+
+    </div>
+
+    
+    
+    
+
+      <footer class="post-footer">
+          <div class="post-tags">
+              <a href="/tags/%E7%94%9F%E6%B4%BB%E6%97%A5%E5%BF%97/" rel="tag"># 生活日志</a>
+              <a href="/tags/%E5%89%8D%E7%AB%AF/" rel="tag"># 前端</a>
+          </div>
+
+        
+
+
+        
+    <div class="post-nav">
+      <div class="post-nav-item">
+    <a href="/2020/01/25/2020%E5%B9%B4%E7%BB%88%E6%80%BB%E7%BB%93/" rel="prev" title="2020春">
+      <i class="fa fa-chevron-left"></i> 2020春
+    </a></div>
+      <div class="post-nav-item">
+    <a href="/2020/06/15/%E9%A1%B9%E7%9B%AE%E7%BB%8F%E7%90%86/" rel="next" title="项目经理">
+      项目经理 <i class="fa fa-chevron-right"></i>
+    </a></div>
+    </div>
+      </footer>
+    
+  </article>
+  
+  
+  
+
+  </div>
+
+
+          </div>
+          
+
+<script>
+  window.addEventListener('tabs:register', () => {
+    let activeClass = CONFIG.comments.activeClass;
+    if (CONFIG.comments.storage) {
+      activeClass = localStorage.getItem('comments_active') || activeClass;
+    }
+    if (activeClass) {
+      let activeTab = document.querySelector(`a[href="#comment-${activeClass}"]`);
+      if (activeTab) {
+        activeTab.click();
+      }
+    }
+  });
+  if (CONFIG.comments.storage) {
+    window.addEventListener('tabs:click', event => {
+      if (!event.target.matches('.tabs-comment .tab-content .tab-pane')) return;
+      let commentClass = event.target.classList[1];
+      localStorage.setItem('comments_active', commentClass);
+    });
+  }
+</script>
+
+        </div>
+          
+  
+  <div class="toggle sidebar-toggle">
+    <span class="toggle-line toggle-line-first"></span>
+    <span class="toggle-line toggle-line-middle"></span>
+    <span class="toggle-line toggle-line-last"></span>
+  </div>
+
+  <aside class="sidebar">
+    <div class="sidebar-inner">
+
+      <ul class="sidebar-nav motion-element">
+        <li class="sidebar-nav-toc">
+          文章目录
+        </li>
+        <li class="sidebar-nav-overview">
+          站点概览
+        </li>
+      </ul>
+
+      <!--noindex-->
+      <div class="post-toc-wrap sidebar-panel">
+      </div>
+      <!--/noindex-->
+
+      <div class="site-overview-wrap sidebar-panel">
+        <div class="site-author motion-element" itemprop="author" itemscope="" itemtype="http://schema.org/Person">
+    <img class="site-author-image" itemprop="image" alt="Jamesxu Wang" src="/images/avatar.jpg">
+  <p class="site-author-name" itemprop="name">Jamesxu Wang</p>
+  <div class="site-description" itemprop="description">圣贤庸行，大人小心！</div>
+</div>
+<div class="site-state-wrap motion-element">
+  <nav class="site-state">
+      <div class="site-state-item site-state-posts">
+          <a href="/archives/">
+        
+          <span class="site-state-item-count">17</span>
+          <span class="site-state-item-name">日志</span>
+        </a>
+      </div>
+      <div class="site-state-item site-state-categories">
+            <a href="/categories/">
+          
+        <span class="site-state-item-count">3</span>
+        <span class="site-state-item-name">分类</span></a>
+      </div>
+      <div class="site-state-item site-state-tags">
+            <a href="/tags/">
+          
+        <span class="site-state-item-count">6</span>
+        <span class="site-state-item-name">标签</span></a>
+      </div>
+  </nav>
+</div>
+  <div class="links-of-author motion-element">
+      <span class="links-of-author-item">
+        <a href="https://github.com/JamesxuWang" title="GitHub → https://github.com/JamesxuWang" rel="noopener" target="_blank"><i class="fa fa-fw fa-github"></i>GitHub</a>
+      </span>
+      <span class="links-of-author-item">
+        <a href="mailto:461047035@qq.com" title="E-Mail → mailto:461047035@qq.com" rel="noopener" target="_blank"><i class="fa fa-fw fa-envelope"></i>E-Mail</a>
+      </span>
+  </div>
+
+
+  <div class="links-of-blogroll motion-element">
+    <div class="links-of-blogroll-title">
+      <i class="fa fa-fw fa-link"></i>
+      Links
+    </div>
+    <ul class="links-of-blogroll-list">
+        <li class="links-of-blogroll-item">
+          <a href="http://jamesxu.wang/" title="http://jamesxu.wang">Home</a>
+        </li>
+    </ul>
+  </div>
+
+      </div>
+
+    </div>
+  </aside>
+  <div id="sidebar-dimmer"></div>
+
+
+      </div>
+    </main>
+
+    <footer class="footer">
+      <div class="footer-inner">
+        
+
+<div class="copyright">
+  
+  © 2016 – 
+  <span itemprop="copyrightYear">2021</span>
+  <span class="with-love">
+    <i class="fa fa-user"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">Jamesxu Wang</span>
+    <span class="post-meta-divider">|</span>
+    <span class="post-meta-item-icon">
+      <i class="fa fa-area-chart"></i>
+    </span>
+      <span class="post-meta-item-text">站点总字数：</span>
+    <span title="站点总字数">28k</span>
+    <span class="post-meta-divider">|</span>
+    <span class="post-meta-item-icon">
+      <i class="fa fa-coffee"></i>
+    </span>
+      <span class="post-meta-item-text">站点阅读时长 ≈</span>
+    <span title="站点阅读时长">26 分钟</span>
+</div>
+
+        
+
+
+
+
+
+
+
+
+      </div>
+    </footer>
+  </div>
+
+  
+  
+  
+  
+
+
+
+
+
+
+
+
+
+
+
+
+  <script defer="" src="//cdn.jsdelivr.net/gh/theme-next/theme-next-three@1/three.min.js"></script>
+
+
+  
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+  
+
+  
+   <canvas class="fireworks" style="position: fixed;left: 0;top: 0;z-index: 1; pointer-events: none;"></canvas>
+   <script type="text/javascript" src="//cdn.bootcss.com/animejs/2.2.0/anime.min.js"></script>
+   
+  
+<script src="https://cdn.jsdelivr.net/npm/live2d-widget@^3.1.3/lib/L2Dwidget.min.js"></script>
+
+<script src="/bundle.js"></script><script>L2Dwidget.init({"pluginRootPath":"live2dw/","pluginJsPath":"lib/","pluginModelPath":"assets/","debug":false,"tagMode":false,"model":{"jsonPath":"https://unpkg.com/live2d-widget-model-koharu@1.0.5/assets/koharu.model.json"},"display":{"position":"right","width":150,"height":300},"mobile":{"show":true},"react":{"opacityDefault":1,"opacityOnHover":0.2},"log":false});</script><script async>window.onload=function(){var a=document.createElement('script'),b=document.getElementsByTagName('script')[0];a.type='text/javascript',a.async=!0,a.src='/sw-register.js?v='+Date.now(),b.parentNode.insertBefore(a,b)};</script></body></html>
