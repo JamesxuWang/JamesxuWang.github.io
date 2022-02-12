@@ -1,9 +1,10 @@
 ---
 title: 前端架构二----Linux(verdaccio + gitlab)集成 
 categories:
-  - web
+  - 代码研发
+  - 前端架构
 date: 2020-01-15 09:32:00
-tags: [前端, Linux]
+tags: [前端，前端架构]
 ---
 
 # 安装verdaccio与gitlab集成部署和发布包
