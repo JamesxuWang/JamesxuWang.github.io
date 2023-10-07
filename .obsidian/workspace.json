@@ -1,0 +1,158 @@
+{
+  "main": {
+    "id": "10aeadd5d01ec542",
+    "type": "split",
+    "children": [
+      {
+        "id": "21f9d7397ad53898",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "296f99d1d72dc2c9",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "source/_posts/770-项目经理实践篇.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "a4258b59391e3795",
+    "type": "split",
+    "children": [
+      {
+        "id": "59f609cf8ddfd16f",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "83c80630402ed4d8",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {
+                "sortOrder": "alphabetical"
+              }
+            }
+          },
+          {
+            "id": "406789b23600e876",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              }
+            }
+          },
+          {
+            "id": "55cbbd7e6e9183a7",
+            "type": "leaf",
+            "state": {
+              "type": "bookmarks",
+              "state": {}
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 200
+  },
+  "right": {
+    "id": "08c9ebb46f8a2711",
+    "type": "split",
+    "children": [
+      {
+        "id": "2799cb40e7e4edd1",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "5acd400ee4fa9f14",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "file": "source/_posts/770-项目经理实践篇.md",
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              }
+            }
+          },
+          {
+            "id": "e96c82ba65e18545",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "file": "source/_posts/770-项目经理实践篇.md",
+                "linksCollapsed": false,
+                "unlinkedCollapsed": true
+              }
+            }
+          },
+          {
+            "id": "1897aa939af43b4a",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "frequency",
+                "useHierarchy": true
+              }
+            }
+          },
+          {
+            "id": "cf7aac18a7563618",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "file": "source/_posts/770-项目经理实践篇.md"
+              }
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300,
+    "collapsed": true
+  },
+  "left-ribbon": {
+    "hiddenItems": {
+      "switcher:打开快速切换": false,
+      "graph:查看关系图谱": false,
+      "canvas:新建白板": false,
+      "daily-notes:打开/创建今天的日记": false,
+      "templates:插入模板": false,
+      "command-palette:打开命令面板": false
+    }
+  },
+  "active": "296f99d1d72dc2c9",
+  "lastOpenFiles": [
+    "source/_posts/770-项目经理总述.md",
+    "source/_posts/010-关于挫折小记.md",
+    "source/_posts/000-2017春.md",
+    "source/_drafts/010-关于认知探索.md",
+    "source/_drafts/010-关于教育.md",
+    "source/_drafts/010-关于苦难.md"
+  ]
+}
