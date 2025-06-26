@@ -3,7 +3,7 @@ title: GITHUB 被墙解决
 categories:
   - 代码研发
 date: 2021-04-15 18:32:00
-tags: [GITHUB]
+tags: [前端，GITHUB]
 ---
 ### 发现问题
 换了新电脑，装博客。 发现GitHub页面都不太能进去。就开了梯子，开了全局代理都没办法clone。

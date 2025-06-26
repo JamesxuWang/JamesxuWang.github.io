@@ -4,16 +4,16 @@
     "type": "split",
     "children": [
       {
-        "id": "21f9d7397ad53898",
+        "id": "36c199fc69e22587",
         "type": "tabs",
         "children": [
           {
-            "id": "296f99d1d72dc2c9",
+            "id": "d6c37b8ad6646084",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "source/_posts/770-项目经理实践篇.md",
+                "file": "source/_drafts/010-关于优雅.md",
                 "mode": "source",
                 "source": false
               }
@@ -69,7 +69,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 200
+    "width": 365.5
   },
   "right": {
     "id": "08c9ebb46f8a2711",
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "source/_posts/770-项目经理实践篇.md",
+                "file": "source/_drafts/010-关于优雅.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "source/_posts/770-项目经理实践篇.md",
+                "file": "source/_drafts/010-关于优雅.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,16 +125,16 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "source/_posts/770-项目经理实践篇.md"
+                "file": "source/_drafts/010-关于优雅.md"
               }
             }
           }
-        ]
+        ],
+        "currentTab": 3
       }
     ],
     "direction": "horizontal",
-    "width": 300,
-    "collapsed": true
+    "width": 225.5
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -146,13 +146,34 @@
       "command-palette:打开命令面板": false
     }
   },
-  "active": "296f99d1d72dc2c9",
+  "active": "d6c37b8ad6646084",
   "lastOpenFiles": [
-    "source/_posts/770-项目经理总述.md",
-    "source/_posts/010-关于挫折小记.md",
+    "source/_drafts/010-关于有趣.md",
+    "source/_drafts/010-偏执生存论.md",
+    "source/_drafts/010-为什么会困惑.md",
+    "source/_drafts/010-游戏行为驱动本质.md",
     "source/_posts/000-2017春.md",
+    "source/_posts/000-2018春.md",
+    "source/_posts/000-2019春.md",
+    "source/_posts/000-2020春.md",
+    "source/_posts/000-2021春.md",
+    "source/_posts/000-2022春.md",
+    "source/_posts/000-2023春.md",
+    "source/_posts/000-2024春.md",
+    "source/_posts/010-关于挫折小记.md",
+    "source/_posts/010-关于平凡.md",
+    "source/_posts/010-关于社会及阶级.md",
+    "source/_posts/010-关于童心.md",
+    "source/_drafts/010-关于优雅.md",
+    "source/_drafts/010-关于意志力.md",
+    "source/_drafts/010-关于习惯.md",
     "source/_drafts/010-关于认知探索.md",
+    "source/_drafts/010-关于苦难.md",
     "source/_drafts/010-关于教育.md",
-    "source/_drafts/010-关于苦难.md"
+    "source/_drafts/010-关于管理.md",
+    "source/_posts/1111-软件工程师总结.md",
+    "source/_posts/1666-前端架构.md",
+    "2023-10-07.md",
+    "未命名.canvas"
   ]
 }
