@@ -21,6 +21,8 @@ jobs:
           # set git infomation
           git config --global user.username '327178020@github.com'
           git config --global user.password "$ACTION_DEPLOY_KEY"
+          git config --global user.email "327178020@github.com"  
+          git config --global user.name "Jamesxu Wang"
           # install dependencies
           echo "install dependencies"
           npm i -g hexo-cli
