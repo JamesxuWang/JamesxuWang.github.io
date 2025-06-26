@@ -18,14 +18,9 @@ jobs:
         env:
           ACTION_DEPLOY_KEY: ${{ secrets.GH_DEPLOY_KEY }}
         run: |
-          # set up private key for deploy
-          mkdir -p ~/.ssh/
-          echo "$ACTION_DEPLOY_KEY" | tr -d '\r' > ~/.ssh/id_rsa
-          chmod 600 ~/.ssh/id_rsa
-          ssh-keyscan github.com >> ~/.ssh/known_hosts
           # set git infomation
-          git config --global user.name 'JamesxuWang'
-          git config --global user.email '327178020@github.com'
+          git config --global user.username '327178020@github.com'
+          git config --global user.password "$ACTION_DEPLOY_KEY"
           # install dependencies
           echo "install dependencies"
           npm i -g hexo-cli
