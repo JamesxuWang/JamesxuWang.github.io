@@ -14,25 +14,12 @@ jobs:
         with:
           node-version: "10.x"
 
-      - name: Setup Hexo env
+      - name: Build and Deploy
+        uses: theme-keep/hexo-deploy-github-pages-action@master
         env:
-          ACTION_DEPLOY_KEY: ${{ secrets.GH_DEPLOY_KEY }}
-        run: |
-          # set git infomation
-          git config --global user.username '327178020@github.com'
-          git config --global user.password "$ACTION_DEPLOY_KEY"
-          git config --global user.email "327178020@github.com"  
-          git config --global user.name "Jamesxu Wang"
-          # install dependencies
-          echo "install dependencies"
-          npm i -g hexo-cli
-          npm i
-          # install pandoc
-          curl -s -L https://github.com/jgm/pandoc/releases/download/2.7.3/pandoc-2.7.3-linux.tar.gz | tar xvzf - -C $RUNNER_TOOL_CACHE/
-
-      - name: Generate
-        run: |
-          # add pandoc to PATH
-          export PATH="$PATH:$RUNNER_TOOL_CACHE/pandoc-2.7.3/bin"
-          # publish
-          hexo generate && hexo deploy
+          PERSONAL_TOKEN: ${{ secrets.GH_DEPLOY_KEY }}
+          PUBLISH_REPOSITORY: JamesxuWang/JamesxuWang.github.io
+          BRANCH: master
+          PUBLISH_DIR: ./public # 部署 public 目录下的文件
+          
+       
