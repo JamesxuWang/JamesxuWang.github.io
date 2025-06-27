@@ -1,18 +1,16 @@
-name: Build and Update Github Pages
-
-on: push
-
+name: deploying Hexo project to GitHub pages
+on:
+  push:
+    branches:
+      - master # master 分支有 push 行为时就触发这个 action
 jobs:
   build:
     runs-on: ubuntu-latest
-
     steps:
-      - uses: actions/checkout@v1
-      
-      - name: Use Node.js 10.x
-        uses: actions/setup-node@v1
+      - name: Checkout
+        uses: actions/checkout@v3
         with:
-          node-version: "10.x"
+          fetch-depth: 0
 
       - name: Build and Deploy
         uses: theme-keep/hexo-deploy-github-pages-action@master
