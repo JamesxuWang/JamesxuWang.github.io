@@ -3,6 +3,7 @@ on:
   push:
     branches:
       - master # master 分支有 push 行为时就触发这个 action
+name: deploying Hexo project to GitHub pages
 jobs:
   build:
     runs-on: ubuntu-latest
@@ -18,4 +19,4 @@ jobs:
           PERSONAL_TOKEN: ${{ secrets.GH_DEPLOY_KEY }}
           PUBLISH_REPOSITORY: JamesxuWang/JamesxuWang.github.io
           BRANCH: master
-          PUBLISH_DIR: ./public # 部署 public 目录下的文件
+          PUBLISH_DIR: ./public 
