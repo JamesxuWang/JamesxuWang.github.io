@@ -35,7 +35,7 @@ tags: [前端，前端架构]
 
 `npm -v && node -v` 
 
-`npm config set registry https:*//registry.npm.taobao.org*`
+`npm config set registry https:*//registry.npmmirror.com*`
 
 `npm install --global node-gyp node-pre-gyp`
 
