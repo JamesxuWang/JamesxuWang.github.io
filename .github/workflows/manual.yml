@@ -13,10 +13,17 @@ jobs:
         with:
           fetch-depth: 0
 
+      - name: Install dependencies
+        run: |
+          npm install -g hexo-cli # 给虚拟机装上hexo运行环境
+          npm install             # 安装依赖
+      - name: Generate Hexo site
+        run: |
+          hexo clean
+          hexo generate
+
       - name: Build and Deploy
-        uses: theme-keep/hexo-deploy-github-pages-action@master
+        uses: peaceiris/actions-gh-pages@v4
         env:
-          PERSONAL_TOKEN: ${{ secrets.GH_DEPLOY_KEY }}
-          PUBLISH_REPOSITORY: JamesxuWang/JamesxuWang.github.io
-          BRANCH: master
-          PUBLISH_DIR: ./public # 部署 public 目录下的文件
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_branch: master
