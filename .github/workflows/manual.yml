@@ -24,6 +24,6 @@ jobs:
 
       - name: Build and Deploy
         uses: peaceiris/actions-gh-pages@v4
-        env:
+        with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           publish_branch: master
