@@ -18,18 +18,15 @@ jobs:
         uses: actions/setup-node@v4
         with:
           node-version: '24' # 建议与你本地开发环境版本一致
+          cache: 'npm'
       
       - run: npm ci
-      
-      - name: Install dependencies
-        run: npm install             # 安装依赖
-      
+       
       - name: Generate Hexo site
-        run: npx hexo clean && npx hexo generate
+        run: npx hexo generate
 
       - name: Build and Deploy
         uses: peaceiris/actions-gh-pages@v4
-        if: github.ref == 'refs/heads/raw'
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           publish_dir: ./public
