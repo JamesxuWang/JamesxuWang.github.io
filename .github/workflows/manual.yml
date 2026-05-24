@@ -16,17 +16,17 @@ jobs:
       - name: Setup Node.js
         uses: actions/setup-node@v4
         with:
-          node-version: '24.14.0' # 建议与你本地开发环境版本一致
+          node-version: '24' # 建议与你本地开发环境版本一致
 
       - name: Install dependencies
-        run: |
-          npm install             # 安装依赖
+        run: npm install             # 安装依赖
       
       - name: Generate Hexo site
-        run: npx hexo clean && npx hexo generate
+        run: npm run build 
 
       - name: Build and Deploy
         uses: peaceiris/actions-gh-pages@v4
+        if: github.ref == 'refs/heads/main'
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           publish_dir: ./public
