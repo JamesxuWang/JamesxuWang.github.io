@@ -19,7 +19,10 @@ jobs:
         with:
           node-version: '12' # 建议与你本地开发环境版本一致
       
-      - run: npm ci
+      - run: npm install -g hexo-cli       # 全局安装 Hexo CLI
+
+      - name: Cache node modules
+        uses: actions/cache@v3
       
       - name: Install dependencies
         run: npm install             # 安装依赖
