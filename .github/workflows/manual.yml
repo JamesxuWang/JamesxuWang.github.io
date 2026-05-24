@@ -2,7 +2,7 @@ name: deploying Hexo project to GitHub pages
 on:
   push:
     branches:
-      - raw # master 分支有 push 行为时就触发这个 action
+      - main # main 分支有 push 行为时就触发这个 action
     workflow_dispatch: 
   #123
 jobs:
@@ -29,7 +29,6 @@ jobs:
 
       - name: Build and Deploy
         uses: peaceiris/actions-gh-pages@v4
-        if: github.ref == 'refs/heads/raw'
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           publish_dir: ./public
