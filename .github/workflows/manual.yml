@@ -26,7 +26,7 @@ jobs:
         run: npx hexo clean && npx hexo generate
 
       - name: Build and Deploy
-        uses: peaceiris/actions-gh-pages@v4.6.4
+        uses: peaceiris/actions-gh-pages@v4
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           publish_dir: ./public
